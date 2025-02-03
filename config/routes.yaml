@@ -1,0 +1,19 @@
+controllers:
+  resource:
+    path: ../src/Controller/
+    namespace: App\Controller
+  type: attribute
+
+
+privacy:
+  path: /privacy
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'base.html.twig'
+
+app_logout:
+  path: /logout
+  methods: GET
+
+api_login_check:
+  path: /api/login_check
